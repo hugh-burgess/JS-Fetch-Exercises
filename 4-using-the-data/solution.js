@@ -3,8 +3,6 @@ fetch(`https://randomuser.me/api/?inc=gender,name,picture&results=10`)
     console.log(response);
     if (response.ok) {
       return response.json();
-    } else {
-      throw new Error(response.status);
     }
   })
   .then((dataObject) => {

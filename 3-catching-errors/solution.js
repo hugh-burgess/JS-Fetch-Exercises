@@ -1,4 +1,4 @@
-fetch(`https://.typicode.com/todos/x`)
+fetch(`https://.typicode.com/todos/1`)
   .then((response) => {
     console.log(response);
     if (response.ok) {
@@ -7,9 +7,6 @@ fetch(`https://.typicode.com/todos/x`)
       console.log(response.status);
     }
   })
-  .then((dataObject) => {
-    console.log(dataObject);
+  .catch((error) => {
+    console.log(` My error is a: ${error}`);
   });
-throw new Error((error) => {
-  console.log(error);
-});
