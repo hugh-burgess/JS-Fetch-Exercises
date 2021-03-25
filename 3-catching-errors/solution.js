@@ -9,7 +9,7 @@ fetch(`https://.typicode.com/todos/x`)
   })
   .then((dataObject) => {
     console.log(dataObject);
-  })
-  .catch((error) => {
-    console.log(error);
   });
+throw new Error((error) => {
+  console.log(error);
+});
